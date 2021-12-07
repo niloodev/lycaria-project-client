@@ -1,2 +1,2 @@
 # lycariaClient
-Cliente do Projeto Lycaria
+DESENVOLVIMENTO PRIVADO DO CLIENTE DO JOGO *LYCARIA*
