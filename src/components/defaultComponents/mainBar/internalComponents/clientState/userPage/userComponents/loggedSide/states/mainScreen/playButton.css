@@ -1,0 +1,73 @@
+.userPlayButton{
+    background-color: white;
+    color: rgb(46,46,46);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    display: flex; justify-content: center; align-items: center; flex-flow: row;
+    padding-top: 18px; padding-bottom: 18px;
+    margin-top: 13px;
+    margin-left: 15px; margin-right: 15px;
+    width: calc(100% - 30px);
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    position: relative;
+    pointer-events: all;
+    overflow: hidden;
+}
+
+.userPlayButton[disabled]{
+    background-color: rgb(182, 182, 182);
+    cursor: default;
+    pointer-events: none;
+}
+
+.userPlayButtonProgress{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    object-fit: cover;
+    background-image: repeating-linear-gradient(333deg, hsla(119,47%,93%,0.05) 0px, hsla(119,47%,93%,0.05) 1px,transparent 1px, transparent 11px,hsla(119,47%,93%,0.05) 11px, hsla(119,47%,93%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(45deg, hsla(119,47%,93%,0.05) 0px, hsla(119,47%,93%,0.05) 1px,transparent 1px, transparent 11px,hsla(119,47%,93%,0.05) 11px, hsla(119,47%,93%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(119,47%,93%,0.05) 0px, hsla(119,47%,93%,0.05) 1px,transparent 1px, transparent 11px,hsla(119,47%,93%,0.05) 11px, hsla(119,47%,93%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(119,47%,93%,0.05) 0px, hsla(119,47%,93%,0.05) 1px,transparent 1px, transparent 11px,hsla(119,47%,93%,0.05) 11px, hsla(119,47%,93%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(119,47%,93%,0.05) 0px, hsla(119,47%,93%,0.05) 1px,transparent 1px, transparent 11px,hsla(119,47%,93%,0.05) 11px, hsla(119,47%,93%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(130, 26, 221),rgb(63, 178, 202));
+}
+
+/* Versão MatchRoom */
+
+.matchPlayButton{
+    display: flex; justify-content: center; align-items: center; flex-flow: row;
+    margin-top: 13px;
+    margin-left: 15px; margin-right: 15px;
+    width: calc(100% - 30px);
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    position: relative;
+    pointer-events: all; overflow: hidden;
+}
+
+.matchPlayButton .matchPlayClose{
+    display: flex; justify-content: center; align-items: center;
+    padding-top: 18px; padding-bottom: 18px;
+    background: rgb(204, 72, 72);
+    height: 100%;
+    flex: 1;
+    cursor: pointer;
+}
+
+.matchPlayButton .matchPlayText{
+    display: flex; justify-content: center; align-items: center; text-align: center;
+    font-weight: bold;
+    padding-top: 18px; padding-bottom: 18px;
+    background-image: linear-gradient(312deg, rgba(107, 107, 107, 0.01) 0%, rgba(107, 107, 107, 0.01) 25%,rgba(140, 140, 140, 0.01) 25%, rgba(140, 140, 140, 0.01) 50%,rgba(140, 140, 140, 0.01) 50%, rgba(140, 140, 140, 0.01) 75%,rgba(182, 182, 182, 0.01) 75%, rgba(182, 182, 182, 0.01) 100%),linear-gradient(106deg, rgba(23, 23, 23, 0.02) 0%, rgba(23, 23, 23, 0.02) 12.5%,rgba(134, 134, 134, 0.02) 12.5%, rgba(134, 134, 134, 0.02) 25%,rgba(31, 31, 31, 0.02) 25%, rgba(31, 31, 31, 0.02) 37.5%,rgba(134, 134, 134, 0.02) 37.5%, rgba(134, 134, 134, 0.02) 50%,rgba(42, 42, 42, 0.02) 50%, rgba(42, 42, 42, 0.02) 62.5%,rgba(6, 6, 6, 0.02) 62.5%, rgba(6, 6, 6, 0.02) 75%,rgba(13, 13, 13, 0.02) 75%, rgba(13, 13, 13, 0.02) 87.5%,rgba(164, 164, 164, 0.02) 87.5%, rgba(164, 164, 164, 0.02) 100%),linear-gradient(327deg, rgba(104, 104, 104, 0.02) 0%, rgba(104, 104, 104, 0.02) 16.667%,rgba(252, 252, 252, 0.02) 16.667%, rgba(252, 252, 252, 0.02) 33.334%,rgba(79, 79, 79, 0.02) 33.334%, rgba(79, 79, 79, 0.02) 50.001000000000005%,rgba(125, 125, 125, 0.02) 50.001%, rgba(125, 125, 125, 0.02) 66.668%,rgba(84, 84, 84, 0.02) 66.668%, rgba(84, 84, 84, 0.02) 83.33500000000001%,rgba(82, 82, 82, 0.02) 83.335%, rgba(82, 82, 82, 0.02) 100.002%),linear-gradient(107deg, rgba(32, 32, 32, 0.03) 0%, rgba(32, 32, 32, 0.03) 16.667%,rgba(53, 53, 53, 0.03) 16.667%, rgba(53, 53, 53, 0.03) 33.334%,rgba(212, 212, 212, 0.03) 33.334%, rgba(212, 212, 212, 0.03) 50.001000000000005%,rgba(190, 190, 190, 0.03) 50.001%, rgba(190, 190, 190, 0.03) 66.668%,rgba(244, 244, 244, 0.03) 66.668%, rgba(244, 244, 244, 0.03) 83.33500000000001%,rgba(118, 118, 118, 0.03) 83.335%, rgba(118, 118, 118, 0.03) 100.002%),linear-gradient(55deg, rgba(30, 30, 30, 0.03) 0%, rgba(30, 30, 30, 0.03) 16.667%,rgba(90, 90, 90, 0.03) 16.667%, rgba(90, 90, 90, 0.03) 33.334%,rgba(230, 230, 230, 0.03) 33.334%, rgba(230, 230, 230, 0.03) 50.001000000000005%,rgba(94, 94, 94, 0.03) 50.001%, rgba(94, 94, 94, 0.03) 66.668%,rgba(216, 216, 216, 0.03) 66.668%, rgba(216, 216, 216, 0.03) 83%,rgba(5, 5, 5, 0.03) 83.335%, rgba(5, 5, 5, 0.03) 100.002%),linear-gradient(90deg, rgb(197, 58, 221),rgb(117, 45, 206));
+    height: 100%;
+    flex: 3;
+    cursor: pointer;
+}
+
+.matchPlayButton .matchPlayText[disabled]{
+    cursor: default;
+    color: rgb(240, 240, 240);
+    background-image: linear-gradient(312deg, rgba(107, 107, 107, 0.01) 0%, rgba(107, 107, 107, 0.01) 25%,rgba(140, 140, 140, 0.01) 25%, rgba(140, 140, 140, 0.01) 50%,rgba(140, 140, 140, 0.01) 50%, rgba(140, 140, 140, 0.01) 75%,rgba(182, 182, 182, 0.01) 75%, rgba(182, 182, 182, 0.01) 100%),linear-gradient(106deg, rgba(23, 23, 23, 0.02) 0%, rgba(23, 23, 23, 0.02) 12.5%,rgba(134, 134, 134, 0.02) 12.5%, rgba(134, 134, 134, 0.02) 25%,rgba(31, 31, 31, 0.02) 25%, rgba(31, 31, 31, 0.02) 37.5%,rgba(134, 134, 134, 0.02) 37.5%, rgba(134, 134, 134, 0.02) 50%,rgba(42, 42, 42, 0.02) 50%, rgba(42, 42, 42, 0.02) 62.5%,rgba(6, 6, 6, 0.02) 62.5%, rgba(6, 6, 6, 0.02) 75%,rgba(13, 13, 13, 0.02) 75%, rgba(13, 13, 13, 0.02) 87.5%,rgba(164, 164, 164, 0.02) 87.5%, rgba(164, 164, 164, 0.02) 100%),linear-gradient(327deg, rgba(104, 104, 104, 0.02) 0%, rgba(104, 104, 104, 0.02) 16.667%,rgba(252, 252, 252, 0.02) 16.667%, rgba(252, 252, 252, 0.02) 33.334%,rgba(79, 79, 79, 0.02) 33.334%, rgba(79, 79, 79, 0.02) 50.001000000000005%,rgba(125, 125, 125, 0.02) 50.001%, rgba(125, 125, 125, 0.02) 66.668%,rgba(84, 84, 84, 0.02) 66.668%, rgba(84, 84, 84, 0.02) 83.33500000000001%,rgba(82, 82, 82, 0.02) 83.335%, rgba(82, 82, 82, 0.02) 100.002%),linear-gradient(107deg, rgba(32, 32, 32, 0.03) 0%, rgba(32, 32, 32, 0.03) 16.667%,rgba(53, 53, 53, 0.03) 16.667%, rgba(53, 53, 53, 0.03) 33.334%,rgba(212, 212, 212, 0.03) 33.334%, rgba(212, 212, 212, 0.03) 50.001000000000005%,rgba(190, 190, 190, 0.03) 50.001%, rgba(190, 190, 190, 0.03) 66.668%,rgba(244, 244, 244, 0.03) 66.668%, rgba(244, 244, 244, 0.03) 83.33500000000001%,rgba(118, 118, 118, 0.03) 83.335%, rgba(118, 118, 118, 0.03) 100.002%),linear-gradient(55deg, rgba(30, 30, 30, 0.03) 0%, rgba(30, 30, 30, 0.03) 16.667%,rgba(90, 90, 90, 0.03) 16.667%, rgba(90, 90, 90, 0.03) 33.334%,rgba(230, 230, 230, 0.03) 33.334%, rgba(230, 230, 230, 0.03) 50.001000000000005%,rgba(94, 94, 94, 0.03) 50.001%, rgba(94, 94, 94, 0.03) 66.668%,rgba(216, 216, 216, 0.03) 66.668%, rgba(216, 216, 216, 0.03) 83%,rgba(5, 5, 5, 0.03) 83.335%, rgba(5, 5, 5, 0.03) 100.002%),linear-gradient(90deg, rgb(139, 69, 151), rgb(99, 61, 146));
+}

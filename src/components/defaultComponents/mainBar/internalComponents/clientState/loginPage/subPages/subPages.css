@@ -1,0 +1,18 @@
+.contentTitle{
+    color: white;
+    font-family: Arial;
+    font-size: 50px;
+
+    margin-bottom: 35px;
+    width: 100%;
+    width: 325px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    user-select: none;
+}
+
+.contentBottom{
+    position: absolute;
+    left: 55px;
+    bottom: 60px;
+}

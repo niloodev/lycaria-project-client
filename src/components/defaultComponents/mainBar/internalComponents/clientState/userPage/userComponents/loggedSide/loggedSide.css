@@ -1,0 +1,25 @@
+/* Classe principal do LoggedSide */
+.loggedSide{
+    position: relative;
+    height: 100%;
+    background: rgb(46,46,46);
+    width: 400px;
+    overflow: hidden;
+    padding-bottom: 49.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+
+    z-index: 20;
+}
+
+.bottomLoggedSide{
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    display: flex; justify-content: center; align-items: center; flex-flow: row;
+    padding-top: 5px; padding-bottom: 5px;
+}
