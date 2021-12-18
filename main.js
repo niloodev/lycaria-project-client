@@ -78,13 +78,13 @@ function createMainWindow() {
 
     // Requisição de Client Colyseus
     const colyseus = require('colyseus.js');
-    global.client = new colyseus.Client('ws://lycaria.herokuapp.com');
+    global.client = new colyseus.Client('ws://localhost:21238');
  
     // Declaração de globais.
     if(__dirname.endsWith('app.asar')) global.mainDir = __dirname.replace('app.asar', '');
     else if(!__dirname.endsWith(String.fromCharCode('U+005C'))) global.mainDir = __dirname + '/';
     else global.mainDir = __dirname;
-    global.baseUrl = 'https://lycaria.herokuapp.com';
+    global.baseUrl = 'http://localhost:21238';
     global.accessKey = 'aXmsaKsoaPw9192_CClsoKWmLx,lSkWPeo´qpLSOjpOMXpoaJspoJXpasmOPWempaSOdmPSOd__dsapiPWO())';
     global.mainWindow = mainWindow;
 }
