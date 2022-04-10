@@ -10,7 +10,7 @@
 <h4 align="center">An online turn-based game (this repository concerns the client) created with <a href="https://pt-br.reactjs.org/" target="_blank">React</a> and <a href="https://www.electronjs.org/" target="_blank">Electron</a></h4>
 
 <p align="center">
-  <a href="https://github.com/niloodev/lycaria-project-game/lycaria-art.pdf">ArtBook</a> •
+  <a href="https://github.com/niloodev/lycaria-project-game/blob/main/lycaria-art.pdf">ArtBook</a> •
   <a href="#proposal">Proposal</a> •
   <a href="#tools">Tools</a> •
   <a href="#author">Author</a>
